@@ -5,10 +5,11 @@ export function createGame(parent: string): Phaser.Game {
   const config: Phaser.Types.Core.GameConfig = {
     type: Phaser.AUTO,
     parent,
-    width: 960,
-    height: 640,
+    width: 720,
+    height: 1200,
     backgroundColor: '#15271e',
     scene: [GameScene],
+    input: { activePointers: 2 },
     scale: {
       mode: Phaser.Scale.FIT,
       autoCenter: Phaser.Scale.CENTER_BOTH,
